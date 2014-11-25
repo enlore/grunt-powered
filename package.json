@@ -1,0 +1,23 @@
+{
+  "name": "elcg_app",
+  "version": "0.0.0",
+  "description": "Serves our portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~4.10.3"
+  },
+  "devDependencies": {
+    "grunt-concurrent": "~1.0.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-stylus": "~0.20.0",
+    "grunt-nodemon": "~0.3.0",
+    "grunt-contrib-jade": "~0.13.0",
+    "grunt-contrib-coffee": "~0.12.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter list"
+  },
+  "author": "enlore",
+  "license": "MIT"
+}

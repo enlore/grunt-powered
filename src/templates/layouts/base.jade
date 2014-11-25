@@ -1,0 +1,12 @@
+include ../mixins/js
+include ../mixins/link
+
+doctype html
+html
+  head
+    +link("/css/main.css")
+
+  body
+    block body
+
+    +js("/js/main.js")
