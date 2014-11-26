@@ -1,7 +1,10 @@
 # Grunt Powered
 ## My App Template
 
-Not just for apps! Useful for dynamic sites, too.
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+Not just for apps! Useful for dynamic sites, too. A little modification is required
+to configure it for static sites.
 
 ## What I Do?
 
