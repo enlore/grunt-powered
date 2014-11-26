@@ -4,6 +4,8 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks "grunt-contrib-stylus"
     grunt.loadNpmTasks "grunt-contrib-jade"
 
+    grunt.loadNpmTasks "grunt-bower-concat"
+
     grunt.loadNpmTasks "grunt-contrib-watch"
     grunt.loadNpmTasks "grunt-concurrent"
     grunt.loadNpmTasks "grunt-nodemon"
@@ -34,8 +36,18 @@ module.exports = (grunt) ->
                 files:
                     "dist/public/index.html": ["src/templates/index.jade"]
 
+        bower_concat:
+            compile:
+                cssDest: "dist/public/css/vendor/deps.css"
+                dest: "dist/public/js/vendor/deps.js"
+                dependencies:
+                    "bootsrap": "jquery"
+
         watch:
             options: {}
+            bower:
+                files: ["bower_components"]
+                tasks: ["bower_concat"]
             coffee:
                 files: ["src/app/**/*.coffee"]
                 tasks: ["coffee:compile"]

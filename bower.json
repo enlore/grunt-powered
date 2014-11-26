@@ -1,0 +1,24 @@
+{
+  "name": "grunt-powered",
+  "version": "1",
+  "homepage": "https://github.com/enlore/grunt-powered",
+  "authors": [
+    "enlore <n.e.lorenson@gmail.com>"
+  ],
+  "description": "Bootstrap, jQuery",
+  "keywords": [
+    "wut"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}

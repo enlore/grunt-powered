@@ -4,9 +4,11 @@ include ../mixins/link
 doctype html
 html
   head
+    +link("/css/vendor/deps.css")
     +link("/css/main.css")
 
   body
     block body
 
+    +js("/js/vendor/deps.js")
     +js("/js/main.js")
