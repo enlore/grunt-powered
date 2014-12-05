@@ -24,11 +24,14 @@ module.exports = (grunt) ->
                     "dist/app/index.js": ["src/app/index.coffee"]
                     "dist/app/app.js": ["src/app/app.coffee"]
 
+            compileclient:
+                    "dist/public/js/main.js": ["src/coffee/main.coffee"]
+
         stylus:
             options: {}
             compile:
                 files:
-                    "dist/public/css/app.css": ["src/styl/main.styl"]
+                    "dist/public/css/main.css": ["src/styl/main.styl"]
 
         jade:
             options: {}
@@ -48,9 +51,14 @@ module.exports = (grunt) ->
             bower:
                 files: ["bower_components"]
                 tasks: ["bower_concat"]
-            coffee:
+
+            coffeeServer:
                 files: ["src/app/**/*.coffee"]
                 tasks: ["coffee:compile"]
+
+            coffeeClient:
+                files: ["src/coffee/**/*.coffee"]
+                tasks: ["coffee:compileClient"]
 
             stylus:
                 files: ["src/styl/*.styl"]
